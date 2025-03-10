@@ -1,0 +1,100 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('/assignment-1/images/pitch.png') no-repeat center center fixed;
+    background-size: cover;
+    
+    margin: 0;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card img.player-face {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.team-info img.team-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 22px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #ffcc00;
+    margin: 0;
+}
+
+.player-info {
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.team-details {
+    font-size: 14px;
+    color: #f0f0f0;
+    margin-top: 10px;
+}
+
+.anthem-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.anthem-link:hover {
+    color: #ff9900;
+    text-decoration: underline;
+}
